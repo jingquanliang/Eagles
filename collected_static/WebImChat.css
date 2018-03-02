@@ -1,0 +1,10 @@
+#webim2 {
+    z-index: 2001;
+    font: 12px/1.5 arial,\5b8b\4f53;
+    color: rgb(75, 75, 75);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    _position: absolute;
+    _top: expression(documentElement.scrollTop+documentElement.clientHeight-this.offsetHeight);
+}

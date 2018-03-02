@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>Articles</h1>
+<ul>
+{% for article in object_list %}
+    <li>{{ article.pub_date|date }} - {{ article.content }}</li>
+{% empty %}
+    <li>No articles yet.</li>
+{% endfor %}
+</ul>
+</body>
+</html>
